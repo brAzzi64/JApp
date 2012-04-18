@@ -97,12 +97,11 @@ class WordReview(object):
 			if match != None:
 				for i, kanji in enumerate(kanji_list):
 					pronunciation_map[kanji] = match.group(i + 1) # groups start in 1
-					#print pronunciation_map[kanji], 
 					if pronunciation_map[kanji] == None:
 						return {} # no resoluble sin implentar pipes |		
 			else:
-				print "Error: word '%s' doesn't match pronunciation '%s' with '%s'" % (word, pronunciation, regexp_str)
-		#print ""
+                #print "Error: word '%s' doesn't match pronunciation '%s' with '%s'" % (word, pronunciation, regexp_str)
+                pass
 		return pronunciation_map
 	
 	def is_kanji(self, char):
