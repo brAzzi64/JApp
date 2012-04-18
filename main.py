@@ -1,6 +1,7 @@
 #!/usr/bin/python2
 # -*- coding: utf8 -*- 
 
+import os
 import cherrypy
 import kanji_review
 import word_review
@@ -15,5 +16,6 @@ class MainApp(object):
 		f = open('root/index.html')
 		return f.read()
 
-				
+cherrypy.config.update({'server.socket_port': int(os.environ.get('PORT', '8080'))})
 cherrypy.quickstart( MainApp(), "/", "cherrypy.config" )
+
