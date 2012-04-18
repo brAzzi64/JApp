@@ -1,0 +1,2168 @@
+﻿1	一	one
+2	二	two
+3	三	three
+4	四	four
+5	五	five
+6	六	six
+7	七	seven
+8	八	eight
+9	九	nine
+10	十	ten
+11	口	mouth
+12	日	day
+13	月	month
+14	田	rice field
+15	目	eye
+16	古	old
+17	吾	I
+18	冒	risk
+19	朋	companion
+20	明	bright
+21	唱	chant
+22	晶	sparkle
+23	品	goods
+24	呂	spine
+25	昌	prosperous
+26	早	early
+27	旭	rising sun
+28	世	generation
+29	胃	stomach
+30	旦	nightbreak
+31	胆	gall bladder
+32	亘	span
+33	凹	concave
+34	凸	convex
+35	旧	olden times
+36	自	oneself
+37	白	white
+38	百	hundred
+39	中	in
+40	千	thousand
+41	舌	tongue
+42	升	measuring box
+43	昇	rise up
+44	丸	round
+45	寸	measurement
+46	専	specialty
+47	博	Dr.
+48	占	fortune telling
+49	上	above
+50	下	below
+51	卓	eminent
+52	朝	morning
+53	只	only
+54	貝	shellfish
+55	貞	upright
+56	員	employee
+57	見	see
+58	児	newborn babe
+59	元	beginning
+60	頁	page
+61	頑	stubborn
+62	凡	mediocre
+63	負	defeat
+64	万	ten thousand
+65	句	phrase
+66	肌	texture
+67	旬	decameron
+68	勺	ladle
+69	的	bull's eye
+70	首	neck
+71	乙	fishguts
+72	乱	riot
+73	直	straightaway
+74	具	tool
+75	真	true
+76	工	craft
+77	左	left
+78	右	right
+79	有	possess
+80	賄	bribe
+81	貢	tribute
+82	項	paragraph
+83	刀	sword
+84	刃	blade
+85	切	cut
+86	召	seduce
+87	昭	shining
+88	則	rule
+89	副	vice-
+90	別	separate
+91	丁	street
+92	町	village
+93	可	can
+94	頂	place on the head
+95	子	child
+96	孔	cavity
+97	了	complete
+98	女	woman
+99	好	fond
+100	如	likeness
+101	母	mama
+102	貫	pierce
+103	兄	elder brother
+104	克	overcome
+105	小	little
+106	少	few
+107	大	large
+108	多	many
+109	夕	evening
+110	汐	eventide
+111	外	outside
+112	名	name
+113	石	stone
+114	肖	resemblance
+115	硝	nitrate
+116	砕	smash
+117	砂	sand
+118	削	plane
+119	光	ray
+120	太	plump
+121	器	utensil
+122	臭	stinking
+123	妙	exquisite
+124	省	focus
+125	厚	thick
+126	奇	strange
+127	川	stream
+128	州	state
+129	順	obey
+130	水	water
+131	氷	icicle
+132	永	eternity
+133	泉	mt spring
+134	原	meadow
+135	願	petition
+136	泳	swim
+137	沼	marsh
+138	沖	open sea
+139	江	creek
+140	汁	soup
+141	潮	tide
+142	源	source
+143	活	lively
+144	消	extinguish
+145	況	but of course
+146	河	river
+147	泊	overnight
+148	湖	lake
+149	測	fathom
+150	土	soil
+151	吐	spit
+152	圧	pressure
+153	埼	cape
+154	垣	hedge
+155	圭	square jewel
+156	封	seal
+157	涯	horizon
+158	寺	Buddhist temple
+159	時	time
+160	均	level
+161	火	fire
+162	炎	inflammation
+163	煩	anxiety
+164	淡	thin
+165	灯	lamp
+166	畑	farm
+167	災	disaster
+168	灰	ashes
+169	点	spot
+170	照	illuminate
+171	魚	fish
+172	漁	fishing
+173	里	ri
+174	黒	black
+175	墨	black ink
+176	鯉	carp
+177	量	quantity
+178	厘	rin
+179	埋	bury
+180	同	same
+181	洞	den
+182	胴	trunk
+183	向	yonder
+184	尚	esteem
+185	字	character
+186	守	guard
+187	完	perfect
+188	宣	proclaim
+189	宵	wee hours
+190	安	relax
+191	宴	banquet
+192	寄	draw near
+193	富	wealth
+194	貯	savings
+195	木	tree
+196	林	grove
+197	森	forest
+198	桂	Jap. Judas Tree
+199	柏	oak
+200	枠	frame
+201	梢	treetops
+202	棚	shelf
+203	杏	apricot
+204	桐	paulownia
+205	植	plant
+206	枯	wither
+207	朴	crude
+208	村	town
+209	相	inter-
+210	机	desk
+211	本	book
+212	札	tag
+213	暦	calendar
+214	案	plan
+215	燥	parch
+216	未	not yet
+217	末	extremity
+219	味	flavor
+220	妹	younger sister
+221	朱	vermilion
+222	株	stocks
+223	若	young
+224	草	grass
+225	苦	suffering
+226	寛	tolerant
+227	薄	dilute
+228	葉	leaf
+229	模	imitation
+230	漠	vague
+231	墓	grave
+232	暮	livelihood
+233	膜	membrane
+234	苗	seedling
+235	兆	portent
+236	桃	peach tree
+237	眺	stare
+238	犬	dog
+239	状	status quo
+240	黙	silence
+241	然	sort of thing
+242	荻	reed
+243	狩	hunt
+244	猫	cat
+245	牛	cow
+246	特	special
+247	告	revelation
+248	先	before
+249	洗	wash
+250	介	jammed in
+251	界	world
+252	茶	tea
+253	合	fit
+254	塔	pagoda
+255	王	king
+256	玉	jewel
+257	宝	treasure
+258	珠	pearl
+259	現	present
+260	狂	lunatic
+261	皇	emperor
+262	呈	display
+263	全	whole
+264	栓	plug
+265	理	logic
+266	主	lord
+267	注	pour
+268	柱	pillar
+269	金	gold
+271	鉢	bowl
+272	銅	copper
+273	釣	angling
+274	針	needle
+275	銘	inscription
+276	鎮	tranquilize
+277	道	road-way
+278	導	guidance
+279	辻	crossing
+280	迅	swift
+281	造	create
+282	迫	urge
+283	逃	escape
+284	辺	environs
+285	巡	patrol
+286	車	car
+287	連	take along
+288	軌	rut
+289	輸	transport
+290	前	in front
+291	各	each
+292	格	status
+293	略	abbreviation
+294	客	guest
+295	額	forehead
+296	夏	summer
+297	処	dispose
+298	条	twig
+299	落	fall
+300	冗	superfluous
+301	軍	army
+302	輝	radiance
+303	運	carry
+304	冠	crown
+305	夢	dream
+306	坑	pit
+307	高	tall
+308	享	receive
+309	塾	cram school
+310	熟	mellow
+311	亭	pavilion
+312	京	capital
+313	涼	refreshing
+314	景	scenery
+315	鯨	whale
+316	舎	cottage
+317	周	circumference
+318	週	week
+319	士	gentleman
+320	吉	good luck
+321	壮	robust
+322	荘	villa
+323	売	sell
+324	学	study
+325	覚	memorize
+326	栄	flourish
+327	書	write
+328	津	haven
+329	牧	breed
+330	攻	aggression
+331	敗	failure
+332	枚	a sheet of
+333	故	happenstance
+334	敬	awe
+335	言	say
+336	警	admonish
+337	計	plot
+338	獄	prison
+339	訂	revise
+340	討	chastise
+341	訓	instruction
+342	詔	imperial edict
+343	詰	packed
+344	話	tale
+345	詠	recitation
+346	詩	poem
+347	語	word
+348	読	read
+349	調	tune
+350	談	discuss
+351	諾	consent
+352	諭	rebuke
+353	式	style
+354	試	test
+356	域	range
+357	賊	burglar
+358	栽	plantation
+359	載	load
+360	茂	overgrown
+361	成	turn into
+362	城	castle
+363	誠	sincerity
+364	威	intimidate
+365	滅	destroy
+366	減	dwindle
+367	桟	scaffold
+368	銭	coin
+369	浅	shallow
+370	止	stop
+371	歩	walk
+372	渉	ford
+373	頻	repeatedly
+374	肯	agreement
+375	企	undertake
+376	歴	curriculum
+377	武	warrior
+379	正	correct
+380	証	evidence
+381	政	politics
+382	定	determine
+383	錠	lock
+384	走	run
+385	超	transcend
+386	赴	proceed
+387	越	surpass
+388	是	just so
+389	題	topic
+390	堤	dike
+391	建	build
+392	延	prolong
+393	誕	nativity
+394	礎	cornerstone
+395	婿	bridegroom
+396	衣	garment
+397	裁	tailor
+398	装	attire
+399	裏	back
+400	壊	demolition
+401	哀	pathetic
+402	遠	distant
+403	猿	monkey
+404	初	first time
+405	布	linen
+406	帆	sail
+407	幅	hanging scroll
+408	帽	cap
+409	幕	curtain
+410	幌	canopy
+411	錦	brocade
+412	市	market
+413	姉	elder sister
+414	肺	lungs
+415	帯	sash
+416	滞	stagnate
+417	刺	thorn
+418	制	system
+419	製	made in
+420	転	revolve
+421	芸	technique
+422	雨	rain
+423	雲	cloud
+424	曇	cloudy weather
+425	雷	thunder
+426	霜	frost
+427	冬	winter
+428	天	heavens
+429	橋	bridge
+431	立	stand up
+432	泣	cry
+433	章	badge
+434	競	vie
+435	帝	sovereign
+436	童	juvenile
+437	瞳	pupil
+438	鐘	bell
+439	商	make a deal
+440	嫡	legitimate wife
+441	適	suitable
+442	滴	drip
+443	敵	enemy
+444	匕	spoon
+445	北	north
+446	背	stature
+447	比	compare
+448	昆	descendants
+449	皆	all
+450	混	mix
+451	渇	thirsty
+453	褐	brown
+454	喝	hoarse
+455	旨	delicious
+456	脂	fat
+457	壱	I (one)
+458	毎	every
+459	敏	cleverness
+460	梅	plum
+461	海	sea
+462	乞	beg
+463	乾	drought
+464	腹	abdomen
+465	複	duplicate
+466	欠	lack
+467	吹	blow
+468	炊	cook
+469	歌	song
+470	軟	soft
+471	次	next
+472	茨	briar
+473	資	assets
+474	姿	figure
+475	諮	consult with
+476	賠	compensation
+477	培	cultivate
+478	剖	divide
+479	音	sound
+480	暗	darkness
+481	韻	rhyme
+482	識	discriminating
+483	鏡	mirror
+484	境	boundary
+485	亡	deceased
+486	盲	blind
+487	妄	delusion
+488	荒	laid waste
+489	望	ambition
+490	方	direction
+491	妨	disturb
+492	坊	boy
+493	芳	perfumed
+494	肪	obese
+495	訪	call on
+496	放	set free
+497	激	violent
+498	脱	undress
+499	説	rumor
+500	鋭	pointed
+501	曽	formerly
+502	増	increase
+503	贈	presents
+504	東	east
+505	棟	ridgepole
+506	凍	frozen
+507	妊	pregnancy
+508	廷	courts
+509	染	dye
+510	燃	burn
+511	賓	VIP
+512	歳	year-end
+513	県	prefecture
+514	栃	horse chestnut
+515	地	ground
+516	池	pond
+517	虫	insect
+518	蛍	lightning bug (firefly)
+519	蛇	snake
+520	虹	rainbow
+521	蝶	butterfly
+522	独	single
+523	蚕	silkworm
+524	風	wind
+525	己	self
+526	起	rouse
+527	妃	queen
+528	改	reformation
+529	記	scribe
+530	包	wrap
+531	胞	placenta
+532	砲	cannon
+533	泡	bubble
+534	亀	tortoise
+535	電	electricity
+536	竜	dragon
+537	滝	waterfall
+538	豚	pork
+539	逐	pursue
+540	遂	consummate
+541	家	house
+542	嫁	marry into
+543	豪	overpowering
+544	腸	intestines
+545	場	location
+546	湯	hot water
+547	羊	sheep
+548	美	beauty
+549	洋	ocean
+550	詳	detailed
+551	鮮	fresh
+552	達	accomplished
+554	差	distinction
+555	着	don
+556	唯	solely
+557	焦	char
+558	礁	reef
+559	集	gather
+560	准	quasi-
+561	進	advance
+562	雑	miscellaneous
+563	雌	feminine
+564	準	semi-
+565	奮	stirred up
+566	奪	rob
+567	確	assurance
+568	午	noon
+569	許	permit
+570	歓	delight
+571	権	authority
+572	観	outlook
+573	羽	feathers
+574	習	learn
+575	翌	the following
+576	曜	weekday
+577	濯	laundry
+579	困	quandry
+580	固	harden
+581	国	country
+582	団	group
+583	因	cause
+584	姻	matrimony
+585	園	park
+586	回	-times
+587	壇	podium
+588	店	store
+589	庫	storehouse
+590	庭	courtyard
+591	庁	government office
+592	床	bed
+593	麻	hemp
+594	磨	grind
+595	心	heart
+596	忘	forget
+597	忍	endure
+598	認	acknowledge
+599	忌	mourning
+600	志	intention
+601	誌	document
+602	忠	loyalty
+603	串	shish kebab
+604	患	afflicted
+605	思	think
+606	恩	grace
+607	応	apply
+608	意	idea
+609	想	concept
+610	息	breath
+611	憩	recess
+612	恵	favor
+613	恐	fear
+614	惑	beguile
+615	感	emotion
+616	憂	melancholy
+617	寡	widow
+618	忙	busy
+619	悦	ecstasy
+620	恒	constancy
+621	悼	lament
+622	悟	enlightenment
+623	怖	dreadful
+624	慌	disconcerted
+625	悔	repent
+626	憎	hate
+627	慣	accustomed
+628	愉	pleasure
+629	惰	lazy
+630	慎	humility
+631	憾	remorse
+632	憶	recollection
+633	慕	pining
+634	添	annexed
+635	必	invariably
+636	泌	ooze
+637	手	hand
+638	看	watch over
+639	摩	chafe
+640	我	ego
+641	義	righteousness
+642	議	deliberation
+643	犠	sacrifice
+644	抹	rub
+645	抱	embrace
+646	搭	board
+647	抄	extract
+648	抗	confront
+649	批	criticism
+650	招	beckon
+651	拓	clear the land
+652	拍	clap
+653	打	strike
+654	拘	arrest
+655	捨	discard
+656	拐	kidnap
+657	摘	pinch
+658	挑	challenge
+659	指	finger
+660	持	hold
+661	括	fasten
+662	揮	brandish
+663	推	conjecture
+664	揚	hoist
+665	提	propose
+666	損	damage
+667	拾	pick up
+668	担	shouldering
+669	拠	foothold
+670	描	sketch
+671	操	maneuver
+672	接	touch
+673	掲	put up a notice
+674	掛	hang
+675	研	polish
+676	戒	commandment
+677	械	contraption
+678	鼻	nose
+679	刑	punish
+680	型	mould
+681	才	genius
+682	財	property
+683	材	lumber
+684	存	suppose
+685	在	exist
+686	乃	from
+687	携	portable
+688	及	reach out
+689	吸	such
+690	扱	handle
+691	丈	length
+692	史	history
+694	更	grow late
+695	硬	stiff
+696	又	or again
+697	双	pair
+698	桑	mulberry
+699	隻	vessels
+700	護	safeguard
+701	獲	seize
+702	奴	guy
+703	怒	angry
+704	友	friend
+705	抜	slip out
+706	投	throw
+707	没	drown
+708	設	establishment
+709	撃	beat
+710	殻	husk
+711	支	branch
+712	技	skill
+713	枝	bough
+714	肢	limb
+715	茎	stalk
+716	怪	suspicious
+717	軽	lightly
+718	叔	uncle
+719	督	coach
+720	寂	loneliness
+721	淑	graceful
+722	反	anti-
+723	坂	slope
+724	板	plank
+725	返	return
+726	販	marketing
+727	爪	claw
+728	妥	gentle
+729	乳	milk
+730	浮	floating
+731	将	leader
+732	奨	exhort
+733	採	pick up
+734	菜	vegetable
+735	受	accept
+736	授	impart
+737	愛	love
+738	払	pay
+739	広	wide
+740	拡	broaden
+741	鉱	mineral
+742	弁	valve
+743	雄	masculine
+744	台	pedastal
+745	怠	neglect
+746	治	reign
+747	始	commence
+748	胎	womb
+749	窓	window
+750	去	gone
+751	法	method
+752	会	meeting
+753	至	climax
+754	室	room
+755	到	arrival
+756	致	doth
+757	互	mutually
+758	棄	abandon
+759	育	bring up
+760	撤	remove
+761	充	allot
+762	銃	gun
+763	硫	sulfur
+764	流	current
+765	允	license
+766	唆	tempt
+767	出	exit
+768	山	mountain
+769	拙	bungling
+770	岩	boulder
+771	炭	charcoal
+772	岐	branch off
+773	峠	mountain peak
+774	崩	crumble
+775	密	secrecy
+776	蜜	honey
+777	嵐	storm
+778	崎	promontory
+779	入	enter
+780	込	crowded
+781	分	part
+782	貧	poverty
+783	頒	partition
+784	公	public
+785	松	pine tree
+786	翁	venerable old man
+787	訟	sue
+788	谷	valley
+789	浴	bathe
+790	容	contain
+791	溶	melt
+792	欲	longing
+793	裕	abundant
+794	鉛	lead (metal)
+795	沿	run alongside
+796	賞	prize
+797	党	party
+798	堂	public chamber
+799	常	usual
+801	掌	manipulate
+802	皮	pelt
+803	波	waves
+804	婆	old woman
+805	披	expose
+806	破	rend
+807	被	incur
+808	残	remainder
+809	殉	martyrdom
+810	殊	particularly
+811	殖	augment
+812	列	file
+813	裂	split
+814	烈	ardent
+815	死	death
+816	葬	internment
+817	瞬	wink
+818	耳	ear
+819	取	take
+820	趣	gist
+821	最	utmost
+822	撮	snapshot
+823	恥	shame
+824	職	post
+825	聖	holy
+826	敢	daring
+827	聴	listen
+828	懐	pocket
+829	慢	ridicule
+830	漫	loose
+831	買	buy
+832	置	placement
+833	罰	penalty
+834	寧	rather
+835	濁	voiced
+836	環	ring
+837	還	send back
+838	夫	husband
+839	扶	aid
+840	渓	mountain stream
+841	規	standard
+842	替	exchange
+843	賛	approve
+844	潜	submerge
+845	失	lose
+846	鉄	iron
+847	迭	alternate
+848	臣	retainer
+849	姫	princess
+850	蔵	storehouse
+851	臓	entrails
+852	賢	intelligent
+853	堅	strict
+854	臨	look to
+855	覧	perusal
+856	巨	gigantic
+857	拒	repel
+858	力	power
+859	男	male
+860	労	labor
+861	募	recruit
+862	劣	inferiority
+863	功	achievement
+864	勧	persuade
+865	努	toil
+866	励	encourage
+867	加	add
+868	賀	congratulations
+869	架	erect
+870	脇	armpit
+871	脅	threaten
+872	協	co-
+873	行	going
+874	律	rhythm
+875	復	restore
+876	得	gain
+877	従	accompany
+878	徒	junior
+879	待	wait
+880	往	journey
+881	征	subjugate
+882	径	diameter
+883	彼	he
+884	役	duty
+885	徳	benevolence
+886	徹	penetrate
+887	徴	indications
+888	懲	penal
+889	微	delicate
+890	街	boulevard
+891	衡	equilibrium
+892	稿	draft
+893	稼	earnings
+894	程	extent
+895	税	tax
+896	稚	immature
+897	和	harmony
+898	移	shift
+899	秒	second
+900	秋	autumn
+901	愁	distress
+902	私	private
+903	秩	regularity
+904	秘	secret
+905	称	appellation
+906	利	profit
+907	梨	pear tree
+908	穫	harvest
+909	穂	ear of a plant
+910	稲	rice plant
+911	香	incense
+912	季	seasons
+913	委	committee
+914	秀	excel
+915	透	transparent
+916	誘	entice
+917	穀	cereals
+918	菌	germ
+919	米	rice
+920	粉	flour
+921	粘	sticky
+922	粒	grains
+923	粧	cosmetics
+924	迷	astray
+925	粋	chic
+926	糧	provisions
+927	菊	chrysanthemum
+928	奥	core
+929	数	number
+930	楼	watchtower
+931	類	soft
+932	漆	lacquer
+933	様	Esq.
+934	求	request
+935	球	ball
+936	救	salvation
+937	竹	bamboo
+938	笑	laugh
+939	笠	bamboo hat
+940	笹	bamboo grass
+941	筋	muscle
+942	箱	box
+943	筆	writing brush
+944	筒	cylinder
+945	等	etc.
+946	算	calculate
+947	答	solution
+948	策	scheme
+949	簿	register
+950	築	fabricate
+951	人	person
+952	佐	assistant
+953	但	however
+954	住	dwell
+955	位	rank
+956	仲	go-between
+957	体	body
+958	悠	remote
+959	件	affair
+960	仕	attend
+961	他	other
+962	伏	prostrated
+963	伝	transmit
+964	仏	Buddha
+965	休	rest
+966	仮	provisional
+967	伯	chief
+968	俗	vulgar
+969	信	faith
+970	佳	excellent
+971	依	reliant
+972	例	example
+973	個	individual
+974	健	healthy
+975	側	side
+976	侍	waiter
+977	停	halt
+978	値	price
+979	倣	emulate
+980	倒	overthrow
+981	偵	spy
+982	僧	Buddhist priest
+983	億	hundred million
+984	儀	ceremony
+985	償	reparation
+986	仙	hermit
+987	催	sponsor
+988	仁	humanity
+989	侮	scorn
+990	使	use
+991	便	convenience
+992	倍	double
+993	優	tenderness
+994	伐	fell
+995	宿	inn
+996	傷	wound
+997	保	protect
+998	褒	praise
+999	傑	greatness
+1000	付	adhere
+1001	符	token
+1002	府	municipality
+1003	任	responsibility
+1004	賃	fare
+1005	代	substitute
+1006	袋	sack
+1007	貸	lend
+1008	化	change
+1009	花	flower
+1010	貨	freight
+1011	傾	lean
+1012	何	what
+1013	荷	baggage
+1014	俊	sagacious
+1015	傍	bystander
+1016	久	long time
+1017	畝	furrow
+1018	囚	captured
+1019	内	inside
+1021	柄	design
+1022	肉	meat
+1023	腐	rot
+1024	座	sit
+1025	卒	graduate
+1026	傘	umbrella
+1028	以	by means of
+1029	似	similar
+1030	併	join
+1031	瓦	tile
+1032	瓶	flower pot
+1033	宮	Shinto shrine
+1034	営	occupation
+1035	善	virtuous
+1036	年	year
+1037	夜	night
+1038	液	fluid
+1039	塚	hillock
+1040	幣	cash
+1041	弊	abuse
+1042	喚	yell
+1043	換	interchange
+1044	融	dissolve
+1045	施	alms
+1046	旋	rotation
+1047	遊	play
+1048	旅	trip
+1050	物	thing
+1051	易	easy
+1052	賜	grant
+1053	尿	urine
+1054	尼	nun
+1055	泥	mud
+1056	塀	fence
+1057	履	footgear
+1058	屋	roof
+1059	握	grip
+1060	屈	yield
+1061	掘	dig
+1062	堀	ditch
+1063	居	reside
+1064	据	set
+1065	層	stratum
+1066	局	bureau
+1067	遅	slow
+1068	漏	leak
+1069	刷	printing
+1070	尺	shaku
+1071	尽	exhaust
+1072	沢	swamp
+1073	訳	translate
+1074	択	choose
+1075	昼	daytime
+1076	戸	door
+1077	肩	shoulder
+1078	房	tassel
+1079	扇	fan
+1080	炉	hearth
+1081	戻	re-
+1082	涙	tears
+1083	雇	employ
+1084	顧	look back
+1085	啓	disclose
+1086	示	show
+1087	礼	salutation
+1088	祥	auspicious
+1089	祝	celebrate
+1090	福	blessing
+1091	祉	welfare
+1092	社	company
+1093	視	inspection
+1094	奈	Nara
+1095	尉	military officer
+1096	慰	consolation
+1097	款	goodwill
+1098	禁	prohibition
+1099	襟	collar
+1100	宗	religion
+1101	崇	adore
+1102	祭	ritual
+1103	察	guess
+1104	擦	grate
+1105	由	wherefore
+1106	抽	pluck
+1107	油	oil
+1108	袖	sleeve
+1109	宙	mid-air
+1110	届	deliver
+1111	笛	flute
+1112	軸	axis
+1113	甲	armor
+1114	押	push
+1115	岬	headland
+1116	挿	insert
+1117	申	speaketh
+1118	伸	expand
+1119	神	gods
+1120	捜	search
+1121	果	fruit
+1122	菓	candy
+1123	課	chapter
+1124	裸	naked
+1126	析	chop
+1127	所	place
+1128	祈	pray
+1129	近	near
+1130	折	fold
+1131	哲	philosophy
+1132	逝	departed
+1133	誓	vow
+1134	暫	temporarily
+1135	漸	steadily
+1136	断	severance
+1137	質	substance
+1138	斥	reject
+1139	訴	accusation
+1140	昨	yesterday
+1141	詐	lie
+1142	作	make
+1143	雪	snow
+1144	録	record
+1145	尋	inquire
+1146	急	hurry
+1147	穏	calm
+1148	侵	encroach
+1149	浸	immersed
+1150	寝	lie down
+1151	婦	lady
+1152	掃	sweep
+1153	当	hit
+1154	争	contend
+1155	浄	clean
+1156	事	matter
+1157	唐	T'ang
+1158	糖	sugar
+1159	康	sane
+1160	逮	apprehend
+1161	伊	Italy
+1162	君	old boy
+1163	群	flock
+1164	耐	-proof
+1165	需	demand
+1166	儒	Confucian
+1167	端	edge
+1168	両	both
+1169	満	full
+1170	画	brush-stroke
+1171	歯	tooth
+1172	曲	bend
+1173	曹	cadet
+1174	遭	encounter
+1175	漕	rowing
+1176	槽	vat
+1177	斗	Big Dipper
+1178	料	fee
+1179	科	department
+1180	図	mpa
+1181	用	utilize
+1182	庸	comfortable
+1183	備	equip
+1184	昔	once upon a time
+1185	錯	confused
+1186	借	borrow
+1187	惜	pity
+1188	措	set aside
+1189	散	scatter
+1190	廿	twenty
+1191	庶	commoner
+1192	遮	intercept
+1193	席	seat
+1194	度	degrees
+1195	渡	transit
+1196	奔	bustle
+1197	噴	erupt
+1198	墳	tomb
+1199	憤	aroused
+1200	焼	bake
+1201	暁	daybreak
+1202	半	half
+1203	伴	consort
+1204	畔	paddy ridge
+1205	判	judgement
+1206	券	ticket
+1207	巻	scroll
+1208	圏	sphere
+1209	勝	victory
+1210	藤	wisteria
+1211	謄	facsimilie
+1212	片	one-sided
+1213	版	printing block
+1214	之	of
+1215	乏	destitution
+1216	芝	turf
+1217	不	negative
+1218	否	negate
+1219	杯	cupfuls
+1220	矢	dart
+1221	矯	rectify
+1222	族	tribe
+1223	知	know
+1224	智	wisdom
+1225	矛	halberd
+1226	柔	tender
+1227	務	task
+1228	霧	fog
+1229	班	squad
+1230	帰	homecoming
+1231	弓	bow
+1232	引	pull
+1233	弔	consolences
+1234	弘	vast
+1235	強	strong
+1236	弱	weak
+1237	沸	seethe
+1238	費	expense
+1239	第	No.
+1240	弟	younger brother
+1241	巧	adroit
+1242	号	nickname
+1243	朽	decay
+1244	誇	boast
+1245	汚	dirty
+1246	与	bestow
+1247	写	copy
+1248	身	somebody
+1249	射	shoot
+1250	謝	apologize
+1251	老	old man
+1252	考	consider
+1253	孝	filial piety
+1254	教	teach
+1255	拷	torture
+1256	者	someone
+1257	煮	boil
+1258	著	renowned
+1259	署	signature
+1260	暑	sultry
+1261	諸	various
+1262	猪	boar
+1263	渚	strand
+1264	賭	gamble
+1265	峡	gorge
+1266	狭	cramped
+1267	挟	sandwiched
+1268	追	chase
+1269	師	expert
+1270	帥	commander
+1271	官	bureaucrat
+1272	棺	coffin
+1273	管	pipe
+1274	父	father
+1275	交	mingle
+1276	効	merit
+1277	較	contrast
+1278	校	exam
+1279	足	leg
+1280	促	stimulate
+1281	距	long-distance
+1282	路	path
+1283	露	dew
+1284	跳	hop
+1285	躍	leap
+1286	践	tread
+1287	踏	step
+1288	骨	skeleton
+1289	滑	slippery
+1290	髄	marrow
+1291	禍	calamity
+1292	渦	whirlpool
+1293	過	overdo
+1294	阪	Heights
+1295	阿	Africa
+1296	際	occasion
+1297	障	hinder
+1298	随	follow
+1299	陪	auxiliary
+1300	陽	sunshine
+1301	陳	line up
+1302	防	ward off
+1303	附	affixed
+1304	院	Inst.
+1305	陣	camp
+1306	隊	regiment
+1307	墜	crash
+1308	降	descend
+1309	階	story
+1310	陛	highness
+1311	隣	neighboring
+1312	隔	isolate
+1313	隠	conceal
+1314	堕	degenerate
+1315	陥	collapse
+1316	穴	hole
+1317	空	empty
+1318	控	withdraw
+1319	突	stab
+1320	究	research
+1321	窒	plug up
+1322	窃	stealth
+1323	窪	depression
+1324	搾	squeeze
+1325	窯	kiln
+1326	窮	hard up
+1327	探	grope
+1328	深	deep
+1329	丘	hill
+1330	岳	Point
+1331	兵	soldier
+1332	浜	seacoast
+1333	糸	thread
+1334	織	weave
+1335	繕	darning
+1336	縮	shrink
+1337	繁	luxuriant
+1338	縦	vertical
+1339	線	line
+1340	締	tighten
+1341	維	fiber
+1342	羅	gauze
+1343	練	practice
+1344	緒	thong
+1345	続	continue
+1346	絵	picture
+1347	統	overall
+1348	絞	strangle
+1349	給	salary
+1350	絡	entwine
+1351	結	tie
+1352	終	end
+1353	級	class
+1354	紀	chronicle
+1355	紅	crimson
+1356	納	settlement
+1357	紡	spinning
+1358	紛	distract
+1359	紹	introduce
+1360	経	sutra
+1361	紳	sire
+1362	約	promise
+1363	細	dainty
+1364	累	accumulate
+1365	索	cord
+1366	総	general
+1367	綿	cotton
+1368	絹	silk
+1369	繰	winding
+1370	継	inherit
+1371	緑	green
+1372	縁	affinity
+1373	網	netting
+1374	緊	tense
+1375	紫	purple
+1376	縛	truss
+1377	縄	straw rope
+1378	幼	infancy
+1379	後	behind
+1380	幽	faint
+1381	幾	how many
+1382	機	mechanism
+1383	玄	mysterious
+1384	畜	livestock
+1385	蓄	amass
+1386	弦	bowstring
+1387	擁	hug
+1388	滋	nourishing
+1389	慈	mercy
+1390	磁	magnet
+1391	系	lineage
+1392	係	person in charge
+1393	孫	grandchild
+1394	懸	suspend
+1395	却	instead
+1396	脚	shins
+1397	卸	wholesale
+1398	御	honorable
+1399	服	clothing
+1400	命	fate
+1401	令	orders
+1402	零	zero
+1403	齢	age
+1404	冷	cool
+1405	領	jurisdiction
+1406	鈴	small bell
+1407	勇	courage
+1408	通	traffic
+1409	踊	jump
+1410	疑	doubt
+1411	擬	mimic
+1412	凝	congeal
+1413	範	pattern
+1414	犯	crime
+1415	厄	unlucky
+1416	危	dangerous
+1417	宛	address
+1418	腕	arm
+1419	苑	garden
+1420	怨	grudge
+1421	柳	willow
+1422	卵	egg
+1423	留	detain
+1424	貿	trade
+1425	印	stamp
+1426	興	entertain
+1427	酉	sign of the bird
+1428	酒	sake
+1429	酌	bartending
+1430	酵	fermentation
+1431	酷	cruyl
+1432	酬	repay
+1433	酪	dairy products
+1434	酢	vinegar
+1435	酔	drunk
+1436	配	distribute
+1437	酸	acid
+1438	猶	waver
+1439	尊	revered
+1440	豆	beans
+1441	頭	head
+1442	短	short
+1443	豊	bountiful
+1444	鼓	drum
+1445	喜	rejoice
+1446	樹	timber-trees
+1447	皿	dish
+1448	血	blood
+1449	盆	basin
+1450	盟	alliance
+1451	盗	steal
+1452	温	warm
+1453	監	oversee
+1455	鑑	specimen
+1456	猛	fierce
+1457	盛	boom
+1458	塩	salt
+1459	銀	silver
+1460	恨	resentment
+1461	根	root
+1462	即	instant
+1464	節	node
+1465	退	retreat
+1466	限	limit
+1467	眼	eyeball
+1468	良	good
+1469	朗	melodious
+1470	浪	wandering
+1471	娘	daughter
+1472	食	eat
+1473	飯	meal
+1474	飲	drink
+1475	飢	hungry
+1476	餓	starve
+1477	飾	decorate
+1478	館	Bldg.
+1479	養	foster
+1480	飽	sated
+1481	既	preiously
+1482	概	outline
+1483	慨	rue
+1484	平	even
+1485	呼	call
+1486	坪	two-mat area
+1487	評	evaluate
+1488	刈	reap
+1489	希	hope
+1490	凶	villain
+1491	胸	bosom
+1492	離	detach
+1493	殺	kill
+1494	純	genuine
+1495	鈍	dull
+1496	辛	spicy
+1497	辞	resign
+1498	梓	catalpa
+1499	宰	superintend
+1500	壁	wall
+1501	避	evade
+1502	新	new
+1503	薪	firewood
+1504	親	parent
+1505	幸	happiness
+1506	執	tenacious
+1507	報	report
+1508	叫	shout
+1509	糾	twist
+1510	収	income
+1511	卑	lowly
+1512	碑	tombstone
+1513	陸	land
+1514	睦	intimidate
+1515	勢	force
+1516	熱	heat
+1517	菱	diamond
+1518	陵	mausoleum
+1520	核	nucleus
+1521	刻	engrave
+1522	該	above-stated
+1523	劾	censure
+1524	述	mention
+1525	術	art
+1526	寒	cold
+1527	醸	brew
+1528	譲	defer
+1529	壌	lot
+1530	嬢	lass
+1531	毒	poison
+1532	素	elementary
+1533	麦	barley
+1534	青	blue
+1535	精	refined
+1536	請	solicit
+1537	情	feelings
+1538	晴	clear up
+1539	清	pure
+1540	静	quiet
+1541	責	blame
+1542	績	expolits
+1543	積	volume
+1544	債	bond
+1545	漬	pickling
+1546	表	surface
+1547	俵	bag
+1548	潔	undefiled
+1549	契	pledge
+1550	喫	consume
+1551	害	harm
+1552	轄	control
+1553	割	proportion
+1554	憲	constitution
+1555	生	life
+1556	星	star
+1557	姓	surname
+1558	性	sex
+1559	牲	animal sacrifice
+1560	産	products
+1561	隆	hump
+1562	峰	summit
+1563	縫	sew
+1564	拝	worship
+1565	寿	longevity
+1566	鋳	casting
+1567	籍	enroll
+1568	春	springtime
+1569	椿	camellia
+1570	泰	peaceful
+1571	奏	play music
+1572	実	reality
+1573	奉	dedicate
+1574	俸	stipend
+1575	棒	rod
+1576	謹	discreet
+1577	勤	diligence
+1578	漢	Sino-
+1579	嘆	sign
+1580	難	difficult
+1581	華	splendor
+1582	垂	droop
+1583	睡	drowsy
+1585	乗	ride
+1586	剰	surplus
+1587	今	now
+1588	含	include
+1589	吟	versify
+1590	念	wish
+1591	琴	harp
+1592	陰	shade
+1593	予	beforehand
+1594	序	preface
+1595	預	deposit
+1596	野	plains
+1597	兼	concurrently
+1598	嫌	dislike
+1599	鎌	sickle
+1600	謙	self-effacing
+1601	廉	bargain
+1602	西	west
+1603	価	value
+1604	要	need
+1605	腰	loins
+1606	票	ballot
+1607	漂	drift
+1608	標	signpost
+1609	栗	chestnut
+1610	遷	transition
+1611	覆	capsize
+1612	煙	smoke
+1613	南	south
+1614	楠	camphor tree
+1615	献	offering
+1616	門	gates
+1617	問	question
+1618	閲	review
+1619	閥	clique
+1620	間	interval
+1621	簡	simplicity
+1622	開	open
+1623	閉	closed
+1624	閣	tower
+1625	閑	leisure
+1626	聞	hear
+1627	潤	wet
+1628	欄	column
+1629	闘	fight
+1630	倉	godown
+1631	創	genesis
+1632	非	un-
+1633	俳	haiku
+1634	排	repudiate
+1635	悲	said
+1636	罪	guilt
+1637	輩	comrade
+1638	扉	front door
+1639	侯	marquis
+1640	候	climate
+1641	決	decide
+1642	快	cheerful
+1643	偉	admirable
+1644	違	difference
+1645	緯	horizontal
+1646	衛	defense
+1647	韓	Korea
+1648	干	dry
+1649	肝	liver
+1650	刊	publish
+1651	汗	sweat
+1652	軒	flats
+1653	岸	beach
+1654	幹	tree trunk
+1655	芋	potato
+1656	宇	eaves
+1657	余	too much
+1658	除	exclude
+1659	徐	gradually
+1660	叙	confer
+1661	途	route
+1662	斜	diagonal
+1663	塗	paint
+1664	束	bundle
+1665	頼	trust
+1666	瀬	rapids
+1667	勅	imperial order
+1668	疎	alienate
+1669	速	quick
+1670	整	organize
+1671	剣	saber
+1672	険	previpitous
+1673	検	examination
+1674	倹	frugal
+1675	重	heavy
+1676	動	move
+1677	勲	meritorious deed
+1678	働	work
+1679	種	species
+1680	衝	collide
+1681	薫	fragrant
+1682	病	ill
+1683	痴	stupid
+1685	症	symptoms
+1686	疾	rapidly
+1687	痢	diarrhea
+1688	疲	tired
+1689	疫	epidemic
+1690	痛	pain
+1691	癖	mannerism
+1692	匿	hide
+1693	匠	artisan
+1694	医	doctor
+1695	匹	equal
+1696	区	ward
+1697	枢	hinge
+1698	殴	assault
+1699	欧	Europe
+1700	抑	repress
+1701	仰	faceup
+1702	迎	welcome
+1703	登	ascend
+1704	澄	lucidity
+1705	発	discharge
+1706	廃	abolish
+1707	僚	colleague
+1708	寮	dormitory
+1709	療	heal
+1710	彫	carve
+1711	形	shape
+1712	影	shadow
+1713	杉	cedar
+1714	彩	coloring
+1715	彰	patent
+1716	彦	lad
+1717	顔	face
+1718	須	ought
+1719	膨	swell
+1720	参	visit
+1721	惨	wretched
+1722	修	discipline
+1723	珍	rare
+1724	診	checkup
+1725	文	sentence
+1726	対	vis-à-vis
+1727	紋	family crest
+1728	蚊	mosquito
+1729	斉	adjusted
+1730	剤	dose
+1731	済	finish
+1732	斎	purification
+1733	粛	solemn
+1734	塁	bases
+1735	楽	music
+1736	薬	medicine
+1737	率	ratio
+1738	渋	astringent
+1739	摂	vicarious
+1740	央	center
+1741	英	England
+1742	映	reflect
+1743	赤	red
+1744	赦	pardon
+1745	変	unusual
+1746	跡	tracks
+1747	蛮	barbarian
+1748	恋	romance
+1749	湾	gulf
+1750	黄	yellow
+1751	横	sideways
+1752	把	grasp
+1753	色	color
+1754	絶	discontinue
+1755	艶	glossy
+1756	肥	fertilizer
+1757	甘	sweet
+1758	紺	navy blue
+1759	某	so-and-so
+1760	謀	conspire
+1761	媒	mediator
+1762	欺	deceit
+1763	棋	chess piece
+1764	旗	national flag
+1765	期	period
+1766	碁	Go
+1767	基	fundamentals
+1768	甚	tremendously
+1769	勘	intuition
+1770	堪	withstand
+1771	貴	precious
+1772	遺	bequeath
+1773	遣	dispatch
+1774	舞	dance
+1775	無	nothingness
+1776	組	association
+1777	粗	coarse
+1778	租	tariff
+1779	祖	ancestor
+1780	阻	thwart
+1781	査	investigate
+1782	助	help
+1783	宜	best regards
+1784	畳	tatami mat
+1785	並	row
+1786	普	universal
+1787	譜	musical score
+1788	湿	samp
+1789	顕	appear
+1790	繊	slender
+1791	霊	spirits
+1792	業	profession
+1793	撲	slap
+1794	僕	me
+1795	共	together
+1796	供	submit
+1797	異	uncommon
+1798	翼	wing
+1799	洪	deluge
+1800	港	harbor
+1801	暴	outburst
+1802	爆	bomb
+1803	恭	respect
+1804	選	elect
+1805	殿	Mr.
+1806	井	well
+1807	囲	surround
+1808	耕	till
+1809	亜	Asia
+1810	悪	bad
+1811	円	circle
+1812	角	angle
+1813	触	contact
+1814	解	unravel
+1815	再	again
+1816	講	lecture
+1817	購	subscription
+1818	構	posture
+1819	溝	gutter
+1820	論	argument
+1821	倫	ethics
+1822	輪	wheel
+1823	偏	partial
+1824	遍	everywhere
+1825	編	compilation
+1826	冊	tome
+1827	典	code
+1828	氏	family name
+1829	紙	paper
+1830	婚	marriage
+1831	低	lower
+1832	抵	resist
+1833	底	bottom
+1834	民	people
+1835	眠	sleep
+1836	捕	catch
+1837	浦	bay
+1838	蒲	bullrush
+1839	舗	shop
+1840	補	supplement
+1841	邸	residence
+1842	郭	enclosure
+1843	郡	county
+1844	郊	outskirts
+1845	部	section
+1846	都	metropolis
+1847	郵	mail
+1848	邦	home country
+1849	郷	hometown
+1850	響	echo
+1851	郎	son
+1852	廊	corridor
+1853	盾	shield
+1854	循	sequential
+1855	派	faction
+1856	脈	vein
+1857	衆	masses
+1858	逓	parcel post
+1859	段	grade
+1860	鍛	forge
+1861	后	empress
+1862	幻	phantasm
+1863	司	director
+1864	伺	pay respects
+1865	詞	parts of speech
+1866	飼	domesticate
+1867	嗣	heir
+1868	舟	boat
+1869	舶	liner
+1870	航	navigate
+1871	般	carrier
+1872	盤	tray
+1873	搬	conveyor
+1874	船	ship
+1875	艦	warship
+1876	艇	rowboat
+1877	瓜	melon
+1878	弧	arc
+1879	孤	orphan
+1880	繭	cocoon
+1881	益	benefit
+1882	暇	spare time
+1883	敷	spread
+1884	来	come
+1885	気	spirit
+1886	汽	vapor
+1887	飛	fly
+1888	沈	sink
+1889	妻	wife
+1890	衰	decline
+1891	衷	inmost
+1892	面	mask
+1893	革	leather
+1894	靴	shows
+1895	覇	hegemony
+1896	声	voice
+1897	呉	give
+1898	娯	recreation
+1899	誤	mistake
+1900	蒸	steam
+1901	承	acquiesce
+1902	函	bin
+1903	極	poles
+1904	牙	tusk
+1905	芽	bud
+1906	邪	wicked
+1907	雅	graceful
+1908	釈	explanation
+1909	番	turn
+1910	審	hearing
+1911	翻	flip
+1912	藩	clan
+1913	毛	fur
+1915	尾	tail
+1916	宅	home
+1917	託	consign
+1918	為	do
+1919	偽	falsehood
+1920	長	long
+1921	張	lengthen
+1922	帳	notebook
+1924	髪	hair of the head
+1925	展	unfold
+1926	喪	miss
+1927	巣	nest
+1928	単	simple
+1929	戦	war
+1930	禅	Zen
+1931	弾	bullet
+1932	桜	cherry tree
+1933	獣	animal
+1934	脳	brain
+1935	悩	trouble
+1936	厳	stern
+1937	鎖	chain
+1938	挙	raise
+1939	誉	reputation
+1940	猟	game hunting
+1941	鳥	bird
+1942	鳴	chirp
+1943	鶴	crane
+1944	烏	crow
+1945	蔦	vine
+1946	鳩	pigeon
+1947	鶏	chicken
+1948	島	island
+1949	暖	warmth
+1950	媛	beautiful woman
+1951	援	abet
+1952	緩	slacken
+1953	属	belong
+1954	嘱	entrust
+1955	偶	accidentally
+1956	遇	interview
+1957	愚	foolish
+1958	隅	corner
+1959	逆	inverted
+1961	岡	Mount
+1962	鋼	steel
+1963	綱	hawser
+1964	剛	sturdy
+1965	缶	tin can
+1966	陶	pottery
+1967	揺	swing
+1968	謡	Noh chanting
+1969	就	concerning
+1970	懇	sociable
+1972	免	excuse
+1973	逸	elude
+1974	晩	nightfall
+1975	勉	exertion
+1976	象	elephant
+1977	像	statue
+1978	馬	horse
+1979	駒	pony
+1980	験	verification
+1981	騎	equestrian
+1982	駐	parking
+1983	駆	drive
+1984	駅	station
+1985	騒	boisterous
+1986	駄	burdensome
+1987	驚	wonder
+1988	篤	fervent
+1989	騰	inflation
+1990	虎	tiger
+1991	虜	captive
+1992	膚	skin
+1993	虚	void
+1994	戯	frolic
+1996	慮	prudence
+1997	劇	drama
+1998	虐	tyrannize
+1999	鹿	deer
+2000	薦	recommend
+2001	慶	jubilation
+2002	麗	lovely
+2003	熊	bear
+2004	能	ability
+2005	態	attitude
+2006	寅	sign of the tiger
+2007	演	performance
+2008	辰	sign of the dragon
+2009	辱	embarrass
+2010	震	quake
+2011	振	shake
+2012	娠	with child
+2013	唇	lips
+2014	農	agriculture
+2015	濃	concentrated
+2016	送	send off
+2017	関	connection
+2018	咲	blossom
+2019	鬼	ghost
+2020	醜	ugly
+2021	魂	soul
+2022	魔	witch
+2023	魅	fascination
+2024	塊	clod
+2025	襲	attack
+2026	嚇	upbraid
+2028	雰	atmosphere
+2030	錬	tempering
+2032	罷	quit
+2033	屯	barracks
+2035	藻	seaweed
+2036	隷	slave
+2037	癒	healing
+2038	丹	cinnabar
+2039	潟	lagoon
+2040	丑	sign of the cow
+2041	卯	sign of the hare
+2042	巳	sign of the snake
+2043	此	
+2045	砦	
+2046	些	
+2047	髭	
+2058	俺	
+2085	雛	
+2087	尤	
+2091	或	
+2092	斬	
+2093	兎	
+2094	也	
+2096	巴	
+2102	云	
+2116	僅	
+2124	倶	
+2133	凄	
+2134	冴	
+2139	凧	
+2146	剃	
+2147	匂	
+2158	喋	
+2160	嘩	
+2161	噂	
+2162	咳	
+2163	喧	
+2164	喉	
+2166	叩	
+2167	嘘	
+2169	呪	
+2170	吠	
+2171	吊	
+2172	噛	
+2173	叶	
+2178	唄	
+2179	叱	
+2187	垢	
+2194	姦	
+2195	妬	
+2207	嬉	
+2214	塞	
+2220	尻	
+2227	崖	
+2236	庇	
+2237	鷹	
+2241	弥	
+2248	挨	
+2249	掴	
+2252	掻	
+2254	拭	
+2255	揃	
+2261	拶	
+2270	撫	
+2277	惚	
+2280	憧	
+2281	恰	
+2284	湧	
+2296	沙	
+2316	汰	
+2324	溜	
+2332	釜	
+2341	狗	
+2342	狐	
+2344	狙	
+2351	萩	
+2363	蘭	
+2368	芯	
+2371	藍	
+2373	苛	
+2374	蔭	
+2377	萌	
+2380	蘇	
+2391	葵	
+2395	蒔	
+2407	茜	
+2414	這	
+2415	迂	
+2418	遥	
+2421	迄	
+2426	隙	
+2427	隈	
+2429	惹	
+2431	忽	
+2432	惣	
+2454	股	
+2461	膝	
+2464	肘	
+2466	腺	
+2472	枕	
+2480	椅	
+2484	杭	
+2494	橘	
+2496	棲	
+2504	杖	
+2516	槍	
+2563	瑞	
+2568	玲	
+2576	癌	
+2578	痕	
+2583	眉	
+2591	碗	
+2594	磯	
+2611	稀	
+2624	裾	
+2640	箸	
+2646	筈	
+2659	緋	
+2661	紐	
+2662	紘	
+2668	綾	
+2674	舵	
+2699	罵	
+2702	戴	
+2709	謎	
+2712	誰	
+2726	諜	
+2736	貼	
+2737	貰	
+2742	蹴	
+2746	醤	
+2748	酎	
+2750	醒	
+2757	鍋	
+2761	鍵	
+2774	閃	
+2777	闇	
+2779	霞	
+2785	鞄	
+2791	頃	
+2792	頬	
+2797	餌	
+2812	鯛	
+2819	鱈	
+2835	鴨	
+2854	兜	
+2855	爽	
+2869	燕	
+2870	嘗	
+2871	殆	
+2875	覗	
+2878	雀	
+2879	隼	
+2882	戚	
+2884	丼	
+2885	暢	
+2889	毅	
+2891	匙	
+2892	匡	
+2897	斐	
+2900	於	
+2904	壷	
+2914	叉	
+2917	拳	
+2933	翔	
+2960	那	

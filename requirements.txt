@@ -1,3 +1,4 @@
 CherryPy==3.2.2
 distribute==0.6.24
+gdata==2.0.16
 wsgiref==0.1.2

@@ -1,0 +1,172 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Kanji Review</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body {
+				font-family: Arial;
+				background-color: #f0f0f0;
+				margin: 0px;
+				overflow: hidden;
+			}
+			
+			a {
+				color: black;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				color: rgb(0,0,144);
+			}
+			
+			#next-show-btn {
+				padding: 4px 8px;
+				margin: 0 5px;
+			}
+			
+			input {
+				width: 40px;
+			}
+			
+		</style>
+		<script type="text/javascript" src="lib/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="lib/jquery-ui/js/jquery-ui-1.8.18.custom.min.js"></script>
+	</head>
+	<body>
+        <script type="text/javascript">
+		
+			var min_value = 1;
+			var max_value = 2000;
+			
+			$(document).ready(function() {
+			
+				// initial values
+				$('#kanji-from').val(min_value);
+				$('#kanji-to').val(max_value);
+				
+				$("#next-show-btn").click(function(event) { onButtonClicked(); });
+				$("#progressive-checkbox").click(function(event) { onCheckboxClicked(); });
+			
+				var updateValues = function(event, ui) {
+				
+					min_value = adjustToLimits( $(this).slider('values', 0) );
+					max_value = adjustToLimits( $(this).slider('values', 1) );
+					
+					$('#kanji-from').val(min_value);
+					$('#kanji-to').val(max_value + 1);
+				}
+				
+				$('#loaded').html(0);
+				
+				requestRandomKanji();
+			});
+			
+			function requestRandomKanji() {
+			
+				// sanitize values
+				var min_value = $('#kanji-from').val();
+				min_value = min_value < 1 ? 1 : min_value;
+				min_value = min_value > 2000 ? 2000 : min_value;
+				
+				var max_value = $('#kanji-to').val();
+				max_value = max_value < 1 ? 1 : max_value;
+				max_value = max_value > 2000 ? 2000 : max_value;
+				
+				if (max_value < min_value) {
+					max_value = min_value;
+				}
+				
+				$('#kanji-from').val(min_value);
+				$('#kanji-to').val(max_value);
+			
+				// make the call
+				$.getJSON('../kanji_review/random_kanji', { 'min_index': min_value, 'max_index': max_value },
+					function (data) {
+					
+						onKanjiDataReceived(data);
+						onCheckboxClicked();
+						
+						var loaded = parseInt( $('#loaded').html() );
+						$('#loaded').html(loaded + 1);
+					})
+				.error(function () { alert("Error: the call to 'random_kanji' failed."); });
+			}
+
+			function setComponentsVisible(value) {
+			
+				var setValue = value ? 1 : 0;
+				
+				$('#index').css('opacity', setValue);
+				$('#meaning').css('opacity', setValue);
+			}
+			
+			function onButtonClicked() {
+				
+				if ( isCheckboxChecked() ) {
+					if ( $('#meaning').css('opacity') == 0 ) {
+						$('#meaning').fadeTo('fast', 1);
+						$('#index').fadeTo('fast', 1);
+						$('#next-show-btn').html('Next');
+					} else {
+						requestRandomKanji();	
+					}
+				} else {
+					requestRandomKanji();
+				}
+			}
+			
+			function onCheckboxClicked() {
+			
+				var checked = isCheckboxChecked();
+				
+				$('#next-show-btn').html(checked ? 'Show' : 'Next');
+				setComponentsVisible(!checked);
+			}
+			
+			function isCheckboxChecked() {
+			
+				return $('#progressive-checkbox').prop('checked');
+			}
+
+			function onKanjiDataReceived(jsonData) {
+				
+				$('#kanji').html( jsonData['kanji'] );
+				$('#meaning').html( jsonData['meaning'] );
+				$('#index').html( jsonData['index'] );
+			}
+			
+		</script>
+		
+		<div class="main-content" style="width: 100%; margin-top: 20px; margin-left: auto; margin-right: auto">
+			<div class="inner-frame" style="margin: 15px; margin-top: 10px; text-align: center; min-height: 220px">
+				<div id="index" style="font-size: 18px; margin-top: 15px; margin-bottom: 15px; color: gray">
+					INDEX
+				</div>
+				<div id="kanji" style="font-size: 100px">
+					KANJI
+				</div>
+				<div id="meaning" style="font-size: 24px; margin-top: 15px; color: rgb(144,0,0)">
+					MEANING
+				</div>
+			</div>
+			<div style="text-align: center; margin-top: 10px">
+				<button id="next-show-btn" type="button">BUTTON</button>
+				<span style="margin-top: 10px; font-size: 10px">
+					<input id="progressive-checkbox" type="checkbox"/>
+					<span style="position: relative; bottom: 2px; left: 2px">progressive</span>
+				</span>
+				<div style="margin-top: 15px; font-size: 12px">
+					Kanji Range:
+				</div>
+				<div style="margin-top: 6px; font-size: 12px">
+					<input type="text" id="kanji-from"></input>
+					to <input type="text" id="kanji-to"></input>
+				</div>
+				<div style="margin-top: 6px; font-size: 12px">
+					Shown: <span id="loaded"></span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
