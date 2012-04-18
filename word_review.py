@@ -100,8 +100,8 @@ class WordReview(object):
 					if pronunciation_map[kanji] == None:
 						return {} # no resoluble sin implentar pipes |		
 			else:
-                #print "Error: word '%s' doesn't match pronunciation '%s' with '%s'" % (word, pronunciation, regexp_str)
-                pass
+				#print "Error: word '%s' doesn't match pronunciation '%s' with '%s'" % (word, pronunciation, regexp_str)
+				pass
 		return pronunciation_map
 	
 	def is_kanji(self, char):
