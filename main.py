@@ -5,7 +5,7 @@ import os
 import cherrypy
 import kanji_review
 import word_review
-import cherrypy.process import servers
+from cherrypy.process import servers
 
 class MainApp(object):
 	def __init__(self):
