@@ -17,11 +17,15 @@ class MainApp(object):
 		f = open('root/index.html')
 		return f.read()
 
+# determine the port and root path to use
+in_heroku = os.environ.get('PORT') != None
+port = 8080 if not in_heroku else int( os.environ.get('PORT') )
+root = '/app' if in_heroku else '/home/brazzi/Development/cherrypy/jap-test'
 
 # fix for explosion in heroku
 def fake_wait_for_occupied_port(host, port): return
 servers.wait_for_occupied_port = fake_wait_for_occupied_port
 
-cherrypy.config.update({'server.socket_port': int(os.environ.get('PORT', '8080'))})
+cherrypy.config.update({'server.socket_port': port, 'tools.staticdir.root': root})
 cherrypy.quickstart( MainApp(), "/", "cherrypy.config" )
 
