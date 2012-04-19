@@ -65,11 +65,11 @@
 			function requestRandomKanji() {
 			
 				// sanitize values
-				var min_value = $('#kanji-from').val();
+				var min_value = parseInt( $('#kanji-from').val() );
 				min_value = min_value < 1 ? 1 : min_value;
 				min_value = min_value > 2000 ? 2000 : min_value;
 				
-				var max_value = $('#kanji-to').val();
+				var max_value = parseInt( $('#kanji-to').val() );
 				max_value = max_value < 1 ? 1 : max_value;
 				max_value = max_value > 2000 ? 2000 : max_value;
 				
