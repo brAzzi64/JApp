@@ -128,3 +128,4 @@ class WordReview(object):
 		info = self.word_hash[word]
 		
 		return json.dumps(info)
+
