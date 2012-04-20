@@ -20,7 +20,7 @@ class MainApp(object):
 # determine the port and root path to use
 in_heroku = os.environ.get('PORT') != None
 port = 8080 if not in_heroku else int( os.environ.get('PORT') )
-root = '/app' if in_heroku else '/home/brazzi/Development/cherrypy/jap-test'
+root = '/app' if in_heroku else '/home/brazzi/Development/cherrypy/japp'
 
 # fix for explosion in heroku
 def fake_wait_for_occupied_port(host, port): return
