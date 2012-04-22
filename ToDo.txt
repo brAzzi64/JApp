@@ -1,0 +1,6 @@
+ToDo
+
+- user inputing URL to his spreadsheet and application processing it, using sessions to maintain the data from different users
+- user being able to set the reach of his kanji studying (and later, persisting it) so that the Kanji Review section of the application can show easy ways to review the studied Kanji
+- persistance of the shown kanjis in order to "give more priority" when randomly chosing them next time
+- ask for kanji and words in bigger random chunks, to improve delay

@@ -38,6 +38,7 @@
 		
 			var min_value = 1;
 			var max_value = 2000;
+			var current_pack = [];
 			
 			$(document).ready(function() {
 			
@@ -47,22 +48,15 @@
 				
 				$("#next-show-btn").click(function(event) { onButtonClicked(); });
 				$("#progressive-checkbox").click(function(event) { onCheckboxClicked(); });
-			
-				var updateValues = function(event, ui) {
-				
-					min_value = adjustToLimits( $(this).slider('values', 0) );
-					max_value = adjustToLimits( $(this).slider('values', 1) );
-					
-					$('#kanji-from').val(min_value);
-					$('#kanji-to').val(max_value + 1);
-				}
+				$("#kanji-from").change(function(event) { onInputValueChanged(); });
+				$("#kanji-to").change(function(event) { onInputValueChanged(); });
 				
 				$('#loaded').html(0);
 				
-				requestRandomKanji();
+				requestRandomKanjiPack(true);
 			});
 			
-			function requestRandomKanji() {
+			function requestRandomKanjiPack(showOnReceived) {
 			
 				// sanitize values
 				var min_value = parseInt( $('#kanji-from').val() );
@@ -81,16 +75,34 @@
 				$('#kanji-to').val(max_value);
 			
 				// make the call
-				$.getJSON('../kanji_review/random_kanji', { 'min_index': min_value, 'max_index': max_value },
+				$.getJSON('../kanji_review/random_kanji', { 'amount' : 15, 'min_index': min_value, 'max_index': max_value },
 					function (data) {
-					
-						onKanjiDataReceived(data);
-						onCheckboxClicked();
-						
-						var loaded = parseInt( $('#loaded').html() );
-						$('#loaded').html(loaded + 1);
+						// add the received elements
+						current_pack.push.apply(current_pack, data);
+						if (showOnReceived)
+							showNextKanji();
 					})
 				.error(function () { alert("Error: the call to 'random_kanji' failed."); });
+			}
+
+			function showNextKanji() {
+
+				if (current_pack.length != 0) {
+					kanjiData = current_pack.splice(0, 1)[0];
+					showKanji(kanjiData);
+					onCheckboxClicked();
+						
+					var loaded = parseInt( $('#loaded').html() );
+					$('#loaded').html(loaded + 1);
+
+					if (current_pack.length < 5) {
+						requestRandomKanjiPack();
+					}
+				} else {
+					// this happens only if the current_pack was
+					// deleted because of changing the kanji range
+					requestRandomKanjiPack(true);
+				}
 			}
 
 			function setComponentsVisible(value) {
@@ -109,11 +121,17 @@
 						$('#index').fadeTo('fast', 1);
 						$('#next-show-btn').html('Next');
 					} else {
-						requestRandomKanji();	
+						showNextKanji();	
 					}
 				} else {
-					requestRandomKanji();
+					showNextKanji();
 				}
+			}
+
+			function onInputValueChanged() {
+				
+				// discard current kanji pack
+				current_pack = [];
 			}
 			
 			function onCheckboxClicked() {
@@ -129,7 +147,7 @@
 				return $('#progressive-checkbox').prop('checked');
 			}
 
-			function onKanjiDataReceived(jsonData) {
+			function showKanji(jsonData) {
 				
 				$('#kanji').html( jsonData['kanji'] );
 				$('#meaning').html( jsonData['meaning'] );
