@@ -130,7 +130,7 @@
 130	水	water
 131	氷	icicle
 132	永	eternity
-133	泉	mt spring
+133	泉	spring
 134	原	meadow
 135	願	petition
 136	泳	swim

@@ -29,6 +29,15 @@
 				overflow: auto;
 				margin-top: 32px;
 			}
+
+			#date-map {
+				height: 100%;
+				position: absolute;
+				left: 35px;
+				top: 0px;
+				overflow: auto;
+				margin-top: 32px;
+			}
 			
 			.kanji-bullet {
 				font-size: 30px;
@@ -45,6 +54,31 @@
 			
 			a:hover {
 				color: rgb(0,0,144);
+			}
+
+			li.date {
+				font-size: 8px;
+				margin-bottom: 6px;
+			}
+
+			li.date span.date-part {
+				float: left;
+				width: 45px;
+			}
+
+			li.date span.date-part:hover {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+
+			.selected-date {
+				font-weight: bold;
+			}
+
+			li.date span.count-part {
+				float: left;
+				width: 15px;
+				text-align: center;
 			}
 			
 			.kanji-word-list ul {
@@ -82,9 +116,12 @@
 	<body>
 		<script type="text/javascript" src="lib/jquery-1.7.2.js"></script>
         <script type="text/javascript">
-		
-			$(document).ready(function() {
 			
+			var selectedDate;
+
+			$(document).ready(function() {
+		
+				getDates();	
 				requestRandomRow();
 				
 				$("#next-show-btn").click(function(event) { onButtonClicked(); });
@@ -93,7 +130,7 @@
 
 			function requestRandomRow() {
 			
-				$.getJSON('../word_review/random_row', function (data) {
+				$.getJSON('../word_review/random_row', { date: selectedDate }, function (data) {
 				
 					onWordDataReceived(data);
 					onCheckboxClicked();									
@@ -109,6 +146,36 @@
 					setComponentsVisible(true);
 				})
 				.error(function () { alert("Error: the call to 'load_word' failed."); });
+			}
+			
+			function getDates() {
+			
+				$.getJSON('../word_review/get_dates', function (data) {
+				
+					var html = '<ul style="padding-left: 12px">';
+					for (i in data) {
+						html += '<li class="date">';
+						html += '<span class="date-part">' + data[i]['date']
+							+ '</span><span class="count-part">(' + data[i]['word_count']
+							+ ')</span>';
+						html += '</li>';
+					}
+					html += '</ul>';
+
+					$('#date-map').html(html);
+					$('span.date-part').click( function(event) {
+						$('span.date-part').removeClass('selected-date');
+						var clickedDate = $(this).html();
+						if (selectedDate == clickedDate) {
+							selectedDate = undefined;
+						} else {
+							selectedDate = clickedDate;
+							$(this).addClass('selected-date');
+						}
+						//console.log(selectedDate);
+					});
+				})
+				.error(function () { alert("Error: the call to 'get_dates' failed."); });
 			}
 
 			function setComponentsVisible(value) {
@@ -248,6 +315,9 @@
 		</div>
 		<div id="kanji-map">
 
+		</div>
+		<div id="date-map">
+			
 		</div>
 	</body>
 </html>

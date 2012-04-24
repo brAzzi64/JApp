@@ -8,6 +8,7 @@ import random
 import json
 import sys
 import re
+from datetime import datetime
 
 class WordReview(object):
 	def __init__(self):
@@ -16,10 +17,11 @@ class WordReview(object):
 		self.spreadsheet_key = '0Ai5r-hNfp2fzdHlJV3B3NWphc3h1cFFOS1UzVXNlRmc'
 		self.cells_feed = None
 		self.top_row = 2
-		self.bottom_row = 241
+		self.bottom_row = 286
 		self.column_labels = {}
 		self.cell_hash = {}
 		self.word_hash = {}
+		self.date_hash = {}
 		
 		self.LoadData()
 	
@@ -29,19 +31,19 @@ class WordReview(object):
 		
 		# create the cell query
 		query = gdata.spreadsheet.service.CellQuery()
-		query.range = 'B%d:F%d' % (self.top_row, self.bottom_row)
+		query.range = 'A%d:F%d' % (self.top_row, self.bottom_row)
 		self.cells_feed = self.gd_client.GetCellsFeed(self.spreadsheet_key, visibility='public', projection='values', query=query)
 		print 'Done.'
 		print 'Creating structures...',
 		sys.stdout.flush()
 		
-		headers = [ 'palabra', "pronunciacion", 'tipo', 'significado', 'jisho' ]
-		self.column_labels = dict( (h, chr(ord('B') + i)) for i, h in enumerate(headers) )
+		headers = [ 'fecha', 'palabra', "pronunciacion", 'tipo', 'significado', 'jisho' ]
+		self.column_labels = dict( (h, chr(ord('A') + i)) for i, h in enumerate(headers) )
 		
 		# store the information in a more convenient structure
 		for e in self.cells_feed.entry:
 			# the string is a str object but encoded as utf8,
-			# so we decode it and convert it to an unicode object.
+			# so we decode it and convert it to a unicode object.
 			self.cell_hash[e.title.text] = e.content.text.decode('utf8') if e.content.text != None else ''
 		
 		# create word dictionary, "word : info"
@@ -53,7 +55,15 @@ class WordReview(object):
 			info['uwuka'] = False if info['tipo'].find('UWUKA') == -1 else True
 			
 			self.word_hash[word] = info
-		
+
+			# add it to the date hash
+			fecha = info['fecha'].split(' ')[0] # the date sometimes arrives as 'DATE HOUR', so we discard the hour
+			fecha = datetime.strptime(fecha, '%m/%d/%Y').strftime("%Y/%m/%d")
+			info['fecha'] = fecha 	
+			if not fecha in self.date_hash.keys():
+				self.date_hash[fecha] = []
+			self.date_hash[fecha].append(word)
+	
 		# create kanji dictionary, "kanji : words"
 		self.kanji_dict = {}
 		for word in self.word_hash.keys():
@@ -64,7 +74,7 @@ class WordReview(object):
 					if not char in self.kanji_dict.keys():
 						self.kanji_dict[char] = []
 					self.kanji_dict[char].append(word)
-					
+		
 		# add kanji_maps to the info structs, now that the kanji dictionary is built
 		for word in self.word_hash.keys():
 			info = self.word_hash[word]
@@ -108,11 +118,15 @@ class WordReview(object):
 		return ord(char) > 0x4E00 and ord(char) < 0x9FFF
 	
 	@cherrypy.expose
-	def random_row(self):
+	def random_row(self, date = None):
 		cherrypy.response.headers['Content-Type'] = "application/json"
 		
-		index = random.randint(0, len(self.word_hash.keys()) - 1)
-		info = self.word_hash[self.word_hash.keys()[index]]
+		if date != None and date in self.date_hash.keys():
+			index = random.randint(0, len(self.date_hash[date]) - 1)
+			info = self.word_hash[self.date_hash[date][index]]
+		else:
+			index = random.randint(0, len(self.word_hash.keys()) - 1)
+			info = self.word_hash[self.word_hash.keys()[index]]
 		
 		return json.dumps(info)
 		
@@ -129,3 +143,14 @@ class WordReview(object):
 		
 		return json.dumps(info)
 
+	@cherrypy.expose
+	def get_dates(self):
+		cherrypy.response.headers['Content-Type'] = "application/json"
+		sorted_dates = list( self.date_hash.keys() )
+		sorted_dates.sort()
+		ordered_dates = list( { 'date' : date, 'word_count' : len( self.date_hash[date] ) } for date in sorted_dates )
+		return json.dumps(ordered_dates)
+
+	
+
+ 
