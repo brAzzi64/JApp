@@ -195,7 +195,7 @@
 195	木	tree
 196	林	grove
 197	森	forest
-198	桂	Jap. Judas Tree
+198	桂	Japanese Judas-tree
 199	柏	oak
 200	枠	frame
 201	梢	treetops
@@ -215,6 +215,7 @@
 215	燥	parch
 216	未	not yet
 217	末	extremity
+218	沫	splash
 219	味	flavor
 220	妹	younger sister
 221	朱	vermilion
