@@ -18,6 +18,9 @@ class KanjiReview(object):
 			if meaning != '':
 				self.kanjis[number] = ( kanji, meaning )
 		self.max_key = max (self.kanjis.keys() )
+		self.current_min_index = None
+		self.current_max_index = None
+		self.index_set = []
 	
 	@cherrypy.expose
 	def random_kanji(self, amount = 1, min_index = -1, max_index = 99999):
@@ -47,11 +50,26 @@ class KanjiReview(object):
 		kanji = 'NO KANJI'
 		meaning = 'invalid data'
 		
-		key = random.randint(min_index, max_index)
+		if min_index != self.current_min_index or max_index != self.current_max_index:
+			self.current_min_index = min_index
+			self.current_max_index = max_index
+			self.index_set = []
+
+		if self.index_set == []:
+			self.index_set = self.create_random_index_set()
+		
+		key = self.index_set.pop()
 		if key in self.kanjis.keys():
 			kanji = self.kanjis[key][0]
 			meaning = self.kanjis[key][1]
 		
 		return {'index' : key, 'kanji' : kanji, 'meaning' : meaning}
 
+	def create_random_index_set(self):
+		base_set = [k for k in range(self.current_min_index, self.current_max_index + 1)]
+		random_set = []
+		while len(base_set) != 0:
+			rand = random.randint(0, len(base_set) - 1)
+			random_set.append(base_set.pop(rand))
+		return random_set
 

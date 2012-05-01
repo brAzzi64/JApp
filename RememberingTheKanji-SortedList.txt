@@ -267,6 +267,7 @@
 267	注	pour
 268	柱	pillar
 269	金	gold
+270	銑	pig iron
 271	鉢	bowl
 272	銅	copper
 273	釣	angling

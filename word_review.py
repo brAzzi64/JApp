@@ -17,7 +17,7 @@ class WordReview(object):
 		self.spreadsheet_key = '0Ai5r-hNfp2fzdHlJV3B3NWphc3h1cFFOS1UzVXNlRmc'
 		self.cells_feed = None
 		self.top_row = 2
-		self.bottom_row = 286
+		self.bottom_row = 341
 		self.column_labels = {}
 		self.cell_hash = {}
 		self.word_hash = {}
