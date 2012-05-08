@@ -352,6 +352,7 @@
 352	諭	rebuke
 353	式	style
 354	試	test
+355	弐	II (two)
 356	域	range
 357	賊	burglar
 358	栽	plantation
@@ -374,6 +375,7 @@
 375	企	undertake
 376	歴	curriculum
 377	武	warrior
+378	賦	levy
 379	正	correct
 380	証	evidence
 381	政	politics
@@ -425,6 +427,7 @@
 427	冬	winter
 428	天	heavens
 429	橋	bridge
+430	嬌	attractive
 431	立	stand up
 432	泣	cry
 433	章	badge
@@ -446,6 +449,7 @@
 449	皆	all
 450	混	mix
 451	渇	thirsty
+452	謁	audience
 453	褐	brown
 454	喝	hoarse
 455	旨	delicious
@@ -546,6 +550,7 @@
 550	詳	detailed
 551	鮮	fresh
 552	達	accomplished
+553	羨	envious
 554	差	distinction
 555	着	don
 556	唯	solely
@@ -570,6 +575,7 @@
 575	翌	the following
 576	曜	weekday
 577	濯	laundry
+578	曰	sayeth
 579	困	quandry
 580	固	harden
 581	国	country
@@ -684,6 +690,7 @@
 690	扱	handle
 691	丈	length
 692	史	history
+693	吏	officer
 694	更	grow late
 695	硬	stiff
 696	又	or again
