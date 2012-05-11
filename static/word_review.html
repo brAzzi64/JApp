@@ -234,7 +234,8 @@
 				//		+ '" target="_blank" title="See example sentences in jisho.org">'
 				//		+ main + '</a>');
 				var html = "";
-				for (i in main) {
+				for (i in main.split("")) {
+
 					var char = main[i];
 					var charCode = main.charCodeAt(i);
 					if (charCode > 0x4E00 && charCode < 0x9FFF) { // if is kanji

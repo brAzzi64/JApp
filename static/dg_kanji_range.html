@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Dialog</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	</head>
+	<body>
+	<div data-role="dialog">
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				$("#from-range").val(min_value);
+				$("#to-range").val(max_value);
+
+				$("#set-button").click(function(event) {
+					var min = parseInt( $("#from-range").val() );
+					var max = parseInt( $("#to-range").val() );
+					
+					issueSetKanjiMinMaxValues(min, max,
+						function() {
+							$('.ui-dialog').dialog('close');
+						});
+				});
+			});
+		</script>
+		<div data-role="header" data-theme="d">
+			<h1>Dialog</h1>
+		</div>
+		<div data-role="content" data-theme="c">
+			<h1>Kanji range</h1>
+			<p>Enter the values that define the range of Kanjis you will be practicing:</p>
+			<div data-role="fieldcontain" style="margin-left: 2em">
+				<label for="from-range">From:</label>
+				<input type="number" name="from-range" id="from-range" value="1" />
+			</div>
+			<div data-role="fieldcontain" style="margin-left: 2em">
+				<label for="to-range">To:</label>
+				<input type="number" name="to-range" id="to-range" value="2000" />
+			</div>
+			<a id="set-button" data-role="button" data-theme="b">Set</a>
+			<a data-role="button" data-rel="back" data-theme="c">Cancel</a>
+		</div>
+	</div>
+	</body>
+</html>
