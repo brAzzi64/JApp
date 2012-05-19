@@ -20,7 +20,10 @@
 				color: rgb(0,0,144);
 			}
 
-			.containing-element .ui-slider-switch { margin-left: 1.2em }
+			.containing-element .ui-slider-switch {
+				width: 12em;
+				margin-right: 0 /* hack, otherwise it would introduce a 34px margin-right */
+			}
 			
 		</style>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,10 +45,21 @@
 				$('#kanji-to').html(max_value);
 				
 				$("#next-show-btn").click(function(event) { onButtonClicked(); });
-				$("#progressive-checkbox").click(function(event) { onCheckboxClicked(); });
 				
 				$('#loaded').html(0);
+
+
+				$('#flip-min').bind("change", function(event, ui) {
 				
+					var reviewModeOn = this.value == "on";
+
+					//$('#next-show-btn').html(checked ? 'Show' : 'Next');
+					setComponentsVisible(!reviewModeOn);
+				});
+
+				$('#flip-min').val("off").slider("refresh");
+				
+				// get the first data
 				requestRandomKanjiPack(true);
 			});
 			
@@ -86,10 +100,13 @@
 			function showNextKanji() {
 
 				if (current_pack.length != 0) {
+					// set to invisible in case Review Mode is On
+					var reviewModeOn = $('#flip-min').val() == "on";
+					setComponentsVisible(!reviewModeOn);
+					
 					kanjiData = current_pack.splice(0, 1)[0];
 					showKanji(kanjiData);
-					onCheckboxClicked();
-						
+
 					var loaded = parseInt( $('#loaded').html() );
 					$('#loaded').html(loaded + 1);
 
@@ -112,8 +129,9 @@
 			}
 			
 			function onButtonClicked() {
-				
-				if ( isCheckboxChecked() ) {
+			
+				var reviewModeOn = $('#flip-min').val() == "on";
+				if ( reviewModeOn ) {
 					if ( $('#meaning').css('opacity') == 0 ) {
 						$('#meaning').fadeTo('fast', 1);
 						$('#index').fadeTo('fast', 1);
@@ -126,19 +144,6 @@
 				}
 			}
 			
-			function onCheckboxClicked() {
-			
-				var checked = isCheckboxChecked();
-				
-				$('#next-show-btn').html(checked ? 'Show' : 'Next');
-				setComponentsVisible(!checked);
-			}
-			
-			function isCheckboxChecked() {
-			
-				return $('#progressive-checkbox').prop('checked');
-			}
-
 			function showKanji(jsonData) {
 				
 				$('#kanji').html( jsonData['kanji'] );
@@ -162,23 +167,18 @@
 			</div>
 			<div style="text-align: center; margin-top: 10px">
 				<button id="next-show-btn" type="button" data-inline="true">Show / Next</button>
-				<div class="containing-element">
-					<label for="flip-min">Review Mode:</label>
-						<select name="slider" id="flip-min" data-role="slider">
-							<option value="off">Off</option>
-							<option value="on">On</option>
-						</select>
-				</div>
-				<span style="margin-top: 10px; font-size: 10px">
-					<input id="progressive-checkbox" type="checkbox"/>
-					<span style="position: relative; bottom: 2px; left: 2px">progressive</span>
-				</span>
-				<div style="margin-top: 15px; font-size: 12px; margin-bottom: 30px">
+				<div style="margin-top: 15px; font-size: 12px; margin-bottom: 23px">
 					KANJI RANGE: <span id="kanji-from">FROM</span> to <span id="kanji-to">TO</span>
 					&nbsp;<span style="font-size: 16px">|</span>&nbsp;
 					KANJIS SHOWN: <span id="loaded"></span>
 				</div>
-				<a href="../static/dg_kanji_range.html" data-role="button" data-mini="true" data-inline="true" data-rel="dialog">Change Kanji Range</a> 
+				<div class="containing-element">
+					<select name="slider" id="flip-min" data-role="slider">
+						<option value="off">Review Mode OFF</option>
+						<option value="on">Review Mode ON</option>
+					</select>
+				</div>
+				<a href="../static/dg_kanji_range.html" data-role="button" data-inline="true" data-rel="dialog">Change Kanji Range</a> 
 			</div>
 		</div>
 	</body>
