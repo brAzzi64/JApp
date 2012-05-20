@@ -10,6 +10,21 @@ import sys
 import re
 from datetime import datetime
 
+
+# Filter Functions to be used by Jinja2
+def get_month_name(month_number):
+	return datetime(2012, month_number, 1).strftime('%B')
+
+def get_weekday_name(date):
+	return date.strftime('%A')
+
+from jinja2 import Environment, FileSystemLoader
+# specify the path from where to load the templates
+env = Environment(loader=FileSystemLoader('templates'))
+env.filters['weekday_name'] = get_weekday_name
+env.filters['month_name'] = get_month_name
+
+
 class WordReview(object):
 	def __init__(self):
 		print 'Initializing...'	
@@ -56,13 +71,15 @@ class WordReview(object):
 			
 			self.word_hash[word] = info
 
-			# add it to the date hash
+			# index it in the date_hash
 			fecha = info['fecha'].split(' ')[0] # the date sometimes arrives as 'DATE HOUR', so we discard the hour
-			fecha = datetime.strptime(fecha, '%m/%d/%Y').strftime("%Y/%m/%d")
-			info['fecha'] = fecha 	
+			fecha = datetime.strptime(fecha, '%m/%d/%Y') # .strftime("%Y/%m/%d")
 			if not fecha in self.date_hash.keys():
 				self.date_hash[fecha] = []
 			self.date_hash[fecha].append(word)
+
+			# we don't need id in the info dic
+			del info['fecha']
 	
 		# create kanji dictionary, "kanji : words"
 		self.kanji_dict = {}
@@ -120,13 +137,19 @@ class WordReview(object):
 	@cherrypy.expose
 	def random_row(self, date = None):
 		cherrypy.response.headers['Content-Type'] = "application/json"
+
+		if date != None:
+			# convert string date into datetime obj
+			date = datetime.strptime(date, '%Y/%m/%d')
+			if date in self.date_hash.keys():
+				index = random.randint(0, len(self.date_hash[date]) - 1)
+				info = dict( self.word_hash[self.date_hash[date][index]] ) # we're creating a copy, let's try not to, later
+			else:
+				date = None
 		
-		if date != None and date in self.date_hash.keys():
-			index = random.randint(0, len(self.date_hash[date]) - 1)
-			info = self.word_hash[self.date_hash[date][index]]
-		else:
+		if date == None:
 			index = random.randint(0, len(self.word_hash.keys()) - 1)
-			info = self.word_hash[self.word_hash.keys()[index]]
+			info = dict( self.word_hash[self.word_hash.keys()[index]] ) # we're creating a copy, let's try not to, later
 		
 		return json.dumps(info)
 		
@@ -143,14 +166,37 @@ class WordReview(object):
 		
 		return json.dumps(info)
 
-	@cherrypy.expose
 	def get_dates(self):
-		cherrypy.response.headers['Content-Type'] = "application/json"
 		sorted_dates = list( self.date_hash.keys() )
 		sorted_dates.sort()
 		ordered_dates = list( { 'date' : date, 'word_count' : len( self.date_hash[date] ) } for date in sorted_dates )
-		return json.dumps(ordered_dates)
+		
+		result = {}
+		current_year = None
+		current_month = None
+		current_year_col = None
+		current_month_col = None
+		for date_info in ordered_dates:
+			date = date_info['date']
+			word_count = date_info['word_count']
 
+			if date.year != current_year:
+				current_year_col = {}
+				result[date.year] = current_year_col
+				current_year = date.year
+
+			if date.month != current_month:
+				current_month_col = []
+				result[current_year][date.month] = current_month_col
+				current_month = date.month
+
+			current_month_col.append( {'day' : date.day, 'word_count' : word_count, 'full_date' : date} )
+					
+		return result
 	
-
- 
+	@cherrypy.expose
+	def main(self):
+		tmpl = env.get_template('word_review.html')
+		ordered_dates = self.get_dates()
+		return tmpl.render(dates = ordered_dates)
+			

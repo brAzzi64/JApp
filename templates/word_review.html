@@ -32,11 +32,12 @@
 
 			#date-map {
 				height: 100%;
+				width: 8em;
 				position: absolute;
-				left: 35px;
-				top: 0px;
+				left: 1.4em;
+				top: 0em;
 				overflow: auto;
-				margin-top: 32px;
+				z-index: 1;
 			}
 			
 			.kanji-bullet {
@@ -60,27 +61,7 @@
 				font-size: 8px;
 				margin-bottom: 6px;
 			}
-
-			li.date span.date-part {
-				float: left;
-				width: 45px;
-			}
-
-			li.date span.date-part:hover {
-				text-decoration: underline;
-				cursor: pointer;
-			}
-
-			.selected-date {
-				font-weight: bold;
-			}
-
-			li.date span.count-part {
-				float: left;
-				width: 15px;
-				text-align: center;
-			}
-			
+					
 			.kanji-word-list ul {
 				margin: 0px;
 				margin-left: 46px;
@@ -110,27 +91,85 @@
 				padding: 4px 8px;
 				margin: 0 5px;
 			}
+
+			#date-map ul {
+				padding-left: 0;
+			}
+
+			#date-map ul li {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
 			
+			#date-map ul li.year {
+				font-size: 1.4em;
+			}
+			
+			#date-map ul li.month {
+				font-size: 1em;
+				margin-top: 0.4em;
+				margin-bottom: 0.2em;
+				margin-left: 0.4em;
+			}
+			
+			#date-map ul li.day {
+				font-size: 0.7em;
+				margin-left: 0.8em;
+				padding: 0.1em;
+			}
+			
+			#date-map ul li.dayX span.date-part {
+				float: left;
+				width: 45px;
+			}
+
+			#date-map ul li.day span.date-part:hover {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+
+			.selected-date {
+				font-weight: bold;
+			}
+
+			#date-map ul li.day span.count-part {
+				/* font-size: 0.8em; */
+				/* margin-left: 0em; */
+				color: #AAA;
+			}
 		</style>
 	</head>
 	<body>
-		<script type="text/javascript" src="lib/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="/static/lib/jquery-1.7.2.js"></script>
         <script type="text/javascript">
 			
 			var selectedDate;
 
 			$(document).ready(function() {
 		
-				getDates();	
 				requestRandomRow();
 				
 				$("#next-show-btn").click(function(event) { onButtonClicked(); });
 				$("#progressive-checkbox").click(function(event) { onCheckboxClicked(); });
+
+				// setup click events for dates
+				$('span.date-part').click( function(event) {
+					$('span.date-part').removeClass('selected-date');
+					var clickedDate = $(this).data('dateindex');
+					if (selectedDate == clickedDate) {
+						selectedDate = undefined;
+					} else {
+						selectedDate = clickedDate;
+						$(this).addClass('selected-date');
+					}
+					console.log(selectedDate);
+				});
 			});
 
 			function requestRandomRow() {
 			
-				$.getJSON('../word_review/random_row', { date: selectedDate }, function (data) {
+				$.getJSON('/word_review/random_row', { date: selectedDate }, function (data) {
 				
 					onWordDataReceived(data);
 					onCheckboxClicked();									
@@ -140,7 +179,7 @@
 			
 			function loadWord(wordToLoad) {
 			
-				$.getJSON('../word_review/load_word', { word: wordToLoad }, function (data) {
+				$.getJSON('/word_review/load_word', { word: wordToLoad }, function (data) {
 				
 					onWordDataReceived(data);
 					setComponentsVisible(true);
@@ -148,36 +187,6 @@
 				.error(function () { alert("Error: the call to 'load_word' failed."); });
 			}
 			
-			function getDates() {
-			
-				$.getJSON('../word_review/get_dates', function (data) {
-				
-					var html = '<ul style="padding-left: 12px">';
-					for (i in data) {
-						html += '<li class="date">';
-						html += '<span class="date-part">' + data[i]['date']
-							+ '</span><span class="count-part">(' + data[i]['word_count']
-							+ ')</span>';
-						html += '</li>';
-					}
-					html += '</ul>';
-
-					$('#date-map').html(html);
-					$('span.date-part').click( function(event) {
-						$('span.date-part').removeClass('selected-date');
-						var clickedDate = $(this).html();
-						if (selectedDate == clickedDate) {
-							selectedDate = undefined;
-						} else {
-							selectedDate = clickedDate;
-							$(this).addClass('selected-date');
-						}
-						//console.log(selectedDate);
-					});
-				})
-				.error(function () { alert("Error: the call to 'get_dates' failed."); });
-			}
-
 			function setComponentsVisible(value) {
 			
 				var setValue = value ? 1 : 0;
@@ -318,7 +327,22 @@
 
 		</div>
 		<div id="date-map">
-			
+			<ul>
+				{% for year in dates.keys() %}
+					<li class='year'>{{ year }}</li>
+					{% for month in dates[year].keys() %}
+   						<li class='month'>{{ month|month_name }}</li>
+						{% for day_data in dates[year][month] %}
+							<li class='day'>
+								<span class="date-part" data-dateindex="{{ day_data['full_date'].strftime('%Y/%m/%d') }}">
+									{{ day_data['full_date']|weekday_name }}  {{ day_data['day'] }}
+								</span>
+								<span class="count-part">({{ day_data['word_count'] }})</span>
+							</li>
+						{% endfor %}
+					{% endfor %}
+				{% endfor %}
+			</ul>
 		</div>
 	</body>
 </html>

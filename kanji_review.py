@@ -7,7 +7,7 @@ import json
 
 from jinja2 import Environment, FileSystemLoader
 # specify the path from where to load the templates
-env = Environment(loader=FileSystemLoader('static'))
+env = Environment(loader=FileSystemLoader('templates'))
 
 
 class KanjiReview(object):

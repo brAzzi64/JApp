@@ -66,7 +66,7 @@
 			function requestRandomKanjiPack(showOnReceived) {
 			
 				// make the call
-				$.getJSON('../kanji_review/random_kanji', { 'amount' : 15},
+				$.getJSON('/kanji_review/random_kanji', { 'amount' : 15},
 					function (data) {
 						// add the received elements
 						current_pack.push.apply(current_pack, data);
@@ -78,7 +78,7 @@
 
 			function issueSetKanjiMinMaxValues(min, max, callback) {
 					$.ajax({
-						url: '../kanji_review/set_kanji_min_max_values',
+						url: '/kanji_review/set_kanji_min_max_values',
 						data: { min_index : min, max_index : max }
 					}).done( function (msg) {
 						// discard current kanji pack
