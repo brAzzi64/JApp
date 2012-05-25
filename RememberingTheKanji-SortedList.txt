@@ -686,7 +686,7 @@
 686	乃	from
 687	携	portable
 688	及	reach out
-689	吸	such
+689	吸	suck
 690	扱	handle
 691	丈	length
 692	史	history
@@ -730,7 +730,7 @@
 730	浮	floating
 731	将	leader
 732	奨	exhort
-733	採	pick up
+733	採	pick
 734	菜	vegetable
 735	受	accept
 736	授	impart
