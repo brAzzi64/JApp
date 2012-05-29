@@ -32,7 +32,6 @@ class WordReview(object):
 		self.spreadsheet_key = '0Ai5r-hNfp2fzdHlJV3B3NWphc3h1cFFOS1UzVXNlRmc'
 		self.cells_feed = None
 		self.top_row = 2
-		self.bottom_row = 413
 		self.column_labels = {}
 		self.cell_hash = {}
 		self.word_hash = {}
@@ -45,9 +44,7 @@ class WordReview(object):
 		sys.stdout.flush()
 		
 		# create the cell query
-		query = gdata.spreadsheet.service.CellQuery()
-		query.range = 'A%d:F%d' % (self.top_row, self.bottom_row)
-		self.cells_feed = self.gd_client.GetCellsFeed(self.spreadsheet_key, visibility='public', projection='values', query=query)
+		self.cells_feed = self.gd_client.GetCellsFeed(self.spreadsheet_key, visibility='public', projection='values')
 		print 'Done.'
 		print 'Creating structures...',
 		sys.stdout.flush()
@@ -61,9 +58,17 @@ class WordReview(object):
 			# so we decode it and convert it to a unicode object.
 			self.cell_hash[e.title.text] = e.content.text.decode('utf8') if e.content.text != None else ''
 		
+		last_row = int(self.cells_feed.row_count.text)
+
 		# create word dictionary, "word : info"
-		for i in range(self.top_row, self.bottom_row):
-			word = self.cell_hash[self.column_labels['palabra'] + str(i)]
+		for i in range(self.top_row, last_row):
+			cell_index = self.column_labels['palabra'] + str(i)
+			
+			# skip rows with empty word field
+			if cell_index not in self.cell_hash.keys():
+				continue
+
+			word = self.cell_hash[cell_index]
 			info = dict( (h, self.cell_hash[self.column_labels[h] + str(i)]) for h in self.column_labels.keys() )
 			
 			# add additional fields

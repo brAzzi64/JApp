@@ -741,7 +741,7 @@
 741	鉱	mineral
 742	弁	valve
 743	雄	masculine
-744	台	pedastal
+744	台	pedestal
 745	怠	neglect
 746	治	reign
 747	始	commence
