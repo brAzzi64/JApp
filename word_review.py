@@ -198,7 +198,12 @@ class WordReview(object):
 			current_month_col.append( {'day' : date.day, 'word_count' : word_count, 'full_date' : date} )
 					
 		return result
-	
+
+	@cherrypy.expose
+	def reload(self):
+		self.__init__()
+		return "Done"
+			
 	@cherrypy.expose
 	def main(self):
 		tmpl = env.get_template('word_review.html')
